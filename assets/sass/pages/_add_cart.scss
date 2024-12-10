@@ -1,0 +1,528 @@
+.add_cart_container {
+    max-width: 1230px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    padding: 80px 10px;
+    flex-direction: column;
+    gap: 57px;
+    h1 {
+        font-family: $priFont;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        text-align: left;
+    }
+    .content1 {
+        display: flex;
+        gap: 26px;
+        align-items: flex-start;
+        .added_products {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            hr {
+                border-bottom: 1px solid #cccccc;
+                width: 100%;
+                border-top: none;
+            }
+            .product {
+                display: flex;
+                gap: 16px;
+                width: 100%;
+                img {
+                    width: 100px;
+                    height: 130px;
+                }
+                .detail {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+                        gap: 8px;
+                        h1,
+                        h2,
+                        h3 {
+                            font-family: $priFont;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 23.44px;
+                            color: $uiBlack;
+                            text-align: left;
+                        }
+                        h2 {
+                            color: $uiGray60;
+                        }
+                    }
+                    .operations {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        .del_btn {
+                            background-color: #f4f4f4;
+                            font-size: 16px;
+                            aspect-ratio: 1;
+                            padding: 8px;
+                            width: 32px;
+                            height: 32px;
+                            color: $uiBlack;
+                            border-radius: 100%;
+                            border: none;
+                        }
+                        .quantity-controls {
+                            border: 1px solid #6e6e6e;
+                            padding: 12px;
+                            border-radius: 4px;
+                            display: flex;
+                            align-items: center;
+                            gap: 40px;
+                            box-sizing: border-box;
+
+                            font-family: $priFont;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 16px;
+                            text-align: left;
+                            color: $uiBlack;
+
+                            .quantity-btn {
+                                border: none;
+                                font-family: $priFont;
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 16px;
+                                text-align: left;
+                                color: $uiBlack;
+                                background-color: transparent;
+                                cursor: pointer;
+                                transition: background-color 0.2s ease-in-out;
+                            }
+
+                            #quantity {
+                                font-family: $priFont;
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 16px;
+                                text-align: left;
+                                color: $uiBlack;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .summary_card {
+            background: #fafafa;
+            max-width: 390px;
+            padding: 24px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            gap: 13px;
+            .cards {
+                justify-content: flex-start !important;
+                gap: 6px;
+            }
+            hr {
+                border-bottom: 1px solid #cccccc;
+                width: 100%;
+                border-top: none;
+            }
+            h1 {
+                font-family: $priFont;
+                color: $uiBlack;
+                text-transform: capitalize;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 26.04px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                font-family: $priFont;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20.83px;
+                text-align: left;
+                color: $uiGray;
+                gap: 20px;
+
+                span {
+                    text-wrap: nowrap;
+                }
+            }
+            .total {
+                font-weight: bold;
+            }
+            p {
+                font-family: $priFont;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                text-align: left;
+                color: $uiGray;
+            }
+            button {
+                font-family: $priFont;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20.83px;
+                text-align: center;
+                padding: 16px;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+                text-decoration: none;
+                a {
+                    text-decoration: none;
+                }
+            }
+            .checkout {
+                background-color: $priColor;
+                color: $white;
+                margin-top: 24px;
+            }
+            .continue_shopping {
+                background-color: $white;
+                color: $priColor;
+                border: 1px solid $priColor;
+            }
+        }
+
+        form {
+            padding: 32px;
+            border: 1px solid #8d8d8d80;
+            width: 100%;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 810px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .payment_method {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .card_details {
+                    max-width: 418px;
+                    width: 100%;
+                    padding: 20px;
+                    background-color: #fafafa;
+                    border-radius: 10px;
+                }
+                hr {
+                    width: 100%;
+                    border-top: none;
+                }
+                input[type="radio"] {
+                    display: inline !important;
+                    accent-color: $priColor;
+                }
+                label {
+                    display: flex;
+                    cursor: pointer;
+                    flex-direction: column;
+                    gap: 10px;
+                    h1 {
+                        font-family: $priFont;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                    }
+                    p {
+                        font-family: $priFont;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #7b7b7b;
+                    }
+                }
+                .payment {
+                    display: flex;
+                    gap: 8px;
+
+                    align-items: flex-start;
+                    h1 {
+                        display: flex;
+                        gap: 5px;
+                    }
+                }
+            }
+            .radio-group {
+                display: flex;
+                gap: 10px;
+                overflow-x: auto;
+                flex-direction: row !important;
+            }
+
+            .radio-label {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 20px;
+
+                border: 1px solid $uiLightGray;
+                border-radius: 8px;
+                cursor: pointer;
+                font-family: $priFont;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+
+                background-color: white;
+                color: $uiBlack;
+                width: 100%;
+                display: flex;
+                gap: 7px;
+                transition: all 0.3s ease;
+            }
+
+            .radio-label input {
+                display: none;
+            }
+
+            input[type="radio"] {
+                display: none;
+            }
+            input[type="radio"]:checked + .radio-label {
+                background-color: $priColor; /* Green background for selected */
+                color: white;
+                font-weight: bold;
+                border: none;
+            }
+
+            h1 {
+                font-family: $priFont;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 32px;
+                text-align: left;
+            }
+            .next {
+                font-family: $priFont;
+                font-size: 16px;
+                font-weight: 700;
+                padding: 17px;
+                max-width: 227px;
+                width: 100%;
+                border-radius: 8px;
+                color: $white;
+                background-color: $priColor;
+                border: none;
+                line-height: 20.83px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                cursor: pointer;
+                margin-left: auto;
+            }
+        }
+    }
+    .compelete {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 36px;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-width: 117px;
+            width: 100%;
+        }
+        .text_section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 12px;
+            h1 {
+                font-family: $priFont;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 29.05px;
+                text-align: center;
+            }
+            p {
+                font-family: $priFont;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19.6px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+        }
+        button {
+            font-family: $priFont;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20.83px;
+            text-align: center;
+            padding: 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: $priColor;
+            color: $white;
+            text-transform: capitalize;
+        }
+    }
+}
+.step_label {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    p {
+        font-family: $priFont;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        a {
+            color: $priColor;
+        }
+    }
+}
+.active_step_label {
+    display: none;
+
+    h1 {
+        font-family: $priFont;
+        font-size: 13px !important;
+        font-weight: 500;
+        line-height: 15.73px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        span {
+            color: #a1a1a1;
+        }
+    }
+}
+@media (min-width: 900px) {
+    .active_step_label {
+        display: none !important;
+    }
+}
+@media (max-width: 900px) {
+    .add_cart_container {
+        padding: 16px;
+        box-sizing: border-box;
+        gap: 32px;
+        h1 {
+            font-size: 24px;
+        }
+        .content1 {
+            flex-wrap: wrap;
+            padding: 0px 10px;
+
+            form {
+                padding: 14px;
+                h1 {
+                    font-size: 20px;
+                }
+                .next {
+                    width: 100%;
+                    max-width: unset;
+                }
+            }
+        }
+    }
+    .step {
+        height: 16px;
+        background-color: #eaecf0;
+        padding: 4px;
+    }
+    .step-number {
+        width: 6px;
+        box-sizing: content-box;
+        height: 6px;
+        background-color: $priColor;
+    }
+    .step.active .step-number {
+        width: 6px;
+        height: 6px;
+        border-width: 5px;
+
+        box-sizing: content-box;
+    }
+    .step_connector {
+        height: 16px;
+    }
+    .stepper {
+        gap: 0;
+        // padding: 5px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #eaecf0;
+    }
+    .step-number span,
+    .step-numbe i {
+        display: none;
+    }
+    .step p {
+        display: none;
+    }
+    .step.completed + .step_connector,
+    .step.completed {
+        background-color: $priColor;
+    }
+    .step.completed .step-number {
+        background-color: $white;
+    }
+    .step.active {
+        background-color: $priColor;
+        border-radius: 0px 6px 6px 0px;
+    }
+    .step.step.completed .fa-check {
+        display: none;
+    }
+
+    .step_label {
+        gap: 10px;
+        p {
+            font-size: 16px;
+        }
+    }
+    .active_step_label {
+        display: flex;
+    }
+    .stepper_outer {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.debit_card + div {
+    display: none;
+}
+.debit_card:has(input:checked) + div {
+    display: block;
+}

@@ -1,0 +1,166 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 22px;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+
+
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    // width: 285px;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    .image {
+        width: 100%;
+        height: 285px;
+        background: #fafafa;
+        position: relative;
+        .floating-btn {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: #ffff;
+            border: 1px solid #fe0c0a;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 500;
+            color: #fe0c0a;
+            border-radius: 4px;
+            font-family: "DM Sans", sans-serif;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .product-name {
+            font-family: "DM Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            text-wrap: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            .stars {
+                display: flex;
+                gap: 4px;
+                font-size: 16px;
+                line-height: 24px;
+                color: #6e6e6e;
+            }
+            .rats {
+                font-family: "DM Sans", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+                color: #6e6e6e;
+
+                .red-text {
+                    color: #e92827;
+                    margin-left: 4px;
+                    text-wrap: nowrap;
+                }
+            }
+        }
+        .rats {
+            font-family: "DM Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            color: #6e6e6e;
+            .red-text {
+                color: #e92827;
+                margin-left: 4px;
+            }
+        }
+    }
+    .button {
+        button {
+            width: 100%;
+            border-radius: 12px;
+            text-align: center;
+            padding: 12px 0;
+            background: #fef2f2;
+            color: #e92827;
+            border: none;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            font-family: "DM Sans", sans-serif;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e92827;
+            color: #ffff;
+        }
+    }
+}
+.mb {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        gap: 17px;
+        .card-container {
+            max-width: 163px;
+            gap: 12px;
+            .image {
+                height: 177px;
+                .floating-btn {
+                    top: 10px;
+                    left: 10px;
+                    padding: 5px 11px;
+                    font-size: 12px;
+                }
+            }
+            .content {
+                .product-name {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+                .rats {
+                    font-size: 14px;
+                }
+            }
+            .button button {
+                padding: 5px 0;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .cards {
+        justify-content: center;
+    }
+}
+@media (max-width: 374px) {
+    .cards {
+        justify-content: center;
+
+    }
+    .card-container {
+        max-width: 135px !important;
+    }
+}

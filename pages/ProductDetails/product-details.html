@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product details</title>
+    <link rel="stylesheet" href="../../assets/sass/main.css" />
+
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    </head>
+
+</head>
+
+<body>
+    <div class="announcement-bar">
+        <div class="container-fluid">
+            <div class="announcements">
+
+                <div class="annnoucements_inner">
+
+                    <div class="announcements-text">🎄🎄🎄 Give the gift of sweet joy with the Katjes Advent
+                        calendar
+                        🎄🎄🎄</div>
+                    <div class="announcements-text">✨🌙 Spread joy and sweetness this Eid with Goodiset! Eid
+                        Mubarak! 🌙✨</div>
+                    <div class="announcements-text">🧧🎉 Celebrate the Lunar New Year with a touch of sweetness from
+                        Goodiset! Wishing you luck and prosperity! 🎉🧧</div>
+                </div>
+            </div>
+
+            <button class="close-btn"><img src="./assets/images/close.png" alt=""></button>
+        </div>
+    </div>
+
+    <nav class="navbar_container">
+        <a href="/"> <img src="../../assets/images/Goodiset-Swedish-logo.png" alt="" class="logo"></a>
+        <ul>
+            <li>Shop</li>
+            <li> <a href="/pages/Picks&Mix/Picks&Mix.html"> Pick & Mix</a></li>
+            <li> <a href="/pages/GiftBox/Giftbox.html"> Boxes </a></li>
+            <li> <a href="/pages/Baskets/Baskets.html"> Baskets </a></li>
+            <li> <a href="/pages/Celebration/Celebration.html"> Celebrations </a></li>
+        </ul>
+
+        <div class="nav_options">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <!-- <i class="fa-solid fa-magnifying-glass" ></i> -->
+            <div class="bar  search_bar"></div>
+            <i class="fa-regular fa-circle-user"></i>
+            <div class="bar"></div>
+            <div class="cart-bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="product-count">0</span>
+            </div>
+            <div class="menu_bar bar"></div>
+            <img src="../../assets/images/hamburger.png" class="menu_icon" alt="">
+        </div>
+    </nav>
+    <div class="details-limit-container details-container">
+        <div class="detail-images">
+            <div class="multiple-images">
+                <div>
+                    <img class="small-image" src="../../assets/images/product1.png" alt="" />
+                </div>
+                <div>
+                    <img class="small-image" src="../../assets/images/product2.png" alt="" />
+                </div>
+                <div>
+                    <img class="small-image" src="../../assets/images/product3.png" alt="" />
+                </div>
+                <div>
+                    <img class="small-image" src="../../assets/images/product4.png" alt="" />
+                </div>
+            </div>
+            <div class="image">
+                <img id="selected_image" src="../../assets/images/product1.png" alt="" />
+                <button class="sale-btn">Sale</button>
+            </div>
+        </div>
+        <div class="content-details">
+            <div class="detail-container">
+                <div class="name-rating">
+                    <h1 class="product-name">
+                        Multicolored Sour Keys (Gluten-Free)
+                    </h1>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(3)</span>
+                    </div>
+                    <p>
+                        AED 90.00 &nbsp; <del>AED 140.00</del> &nbsp;
+                        <span>50% Off</span>
+                    </p>
+                </div>
+                <div class="earn">
+                    <p>
+                        Earn AED 1.90 with <span>our loyalty program</span>
+                    </p>
+                    <div class="interest">
+                        Or 4 Interest-free payments of AED 2.55
+                        <span>Learn more</span>
+                        <img src="../../assets/icons/tabby.svg" alt="" />
+                    </div>
+                    <div class="interest">
+                        Or 4 Interest-free payments of AED 2.55
+                        <span>Learn more</span>
+                        <img src="../../assets/icons/postpay.svg" alt="" />
+                    </div>
+                </div>
+                <div class="quantity-container">
+                    <label for="quantity-input">Quantity</label>
+                    <div class="quantity-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" id="quantity-input" value="1" min="1" />
+                        <button type="button" class="increment">+</button>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="fast-delivery">
+                <p class="fast">FASTER DELIVERY</p>
+                <p>
+                    Delivered by <span class="day">Tomorrow</span>, if you
+                    order in <span class="date">8 hours & 30 minutes</span>
+                </p>
+                <p>
+                    Delivered to <span class="date">Abu Hall, Dubai</span>
+                </p>
+            </div>
+
+            <div class="delivery-cash">
+                <div class="cash">
+                    <i class="fa-solid fa-truck"></i>
+                    <p>Cash on Delivery Available</p>
+                </div>
+                <div class="cash">
+                    <i class="fa-solid fa-rotate"></i>
+                    <p>30 days Free Return</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs details-limit-container">
+        <div class="tab-header">
+            <div class="tab-item active" data-tab="description">
+                Description
+            </div>
+            <div class="tab-item" data-tab="shipping">Shipping Policy</div>
+            <div class="tab-item" data-tab="return">Return Policy</div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-panel active" id="description">
+                <p>
+                    Ingredients: Sugar, flour, modified corn starch and
+                    potato starch, hardened vegetable fat (palm kernel,
+                    coconut), emulsifiers (mono- and diglycerides of fatty
+                    acids), thickening agents (gum arabic), color (carmine),
+                    aroma, acidity regulator (citric acid, malic acid),
+                    salt, vegetable oil (palm, palm kernel, coconut),
+                    glazing agents (karnabauwax). Allergens: Gluten<br />
+                    Please note – cross contamination may occur as these
+                    candies are packaged in a facility that also handles
+                    products with gluten and other allergens.
+                </p>
+                <p>
+                    Glucose-fructose syrup, corn starch, invert sugar syrup,
+                    WHEAT FLOUR, palm fat; acidity regulators: malic acid,
+                    citric acid, L-tartaric acid; humectants: glycerol;
+                    potato starch, flavorings; emulsifier: E471; acidity
+                    regulators: potassium citrates; salt; vegetable
+                    concentrates: carrot, black currants; dyes: E100, E120,
+                    E133, E171.<br />
+                    Please note – cross contamination may occur as these
+                    candies are packaged in a facility that also handles
+                    products with gluten and other allergens.
+                </p>
+                <p>
+                    Sour Melon Wedges are tangy, melon-flavored gummy
+                    candies with a sour sugar coating.<br />
+                    Gelatin-Free, Vegan<br />
+                    Sugar, glucose syrup, wheat starch, modified potato
+                    starch, acidity regulator (E270, E330, E325), corn
+                    starch, food coloring (pumpkin, carrot, radish and apple
+                    concentrate), fully hydrogenated vegetable fat
+                    (rapeseed, sunflower), natural flavoring.<br />
+                    Please note – cross contamination may occur as these
+                    candies are packaged in a facility that also handles
+                    products with gluten and other allergens.
+                </p>
+            </div>
+            <div class="tab-panel" id="shipping">
+                <p>Shipping policy details will be displayed here.</p>
+            </div>
+            <div class="tab-panel" id="return">
+                <p>Return policy details will be displayed here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="shipping-container">
+        <div class="shipping-card">
+            <div class="shipping-inner">
+                <div class="icon">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="content">
+                    <p class="name">Free Shipping</p>
+                    <p class="order">on AU orders $80+</p>
+                </div>
+            </div>
+        </div>
+        <div class="shipping-card">
+            <div class="shipping-inner">
+                <div class="icon">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                </div>
+                <div class="content">
+                    <p class="name">Easy Returns</p>
+                    <p class="order">for your perfect fit</p>
+                </div>
+            </div>
+        </div>
+        <div class="shipping-card">
+            <div class="shipping-inner">
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="content">
+                    <p class="name">Loved By Thousands</p>
+                    <p class="order">who come back for more</p>
+                </div>
+            </div>
+        </div>
+        <div class="shipping-card">
+            <div class="shipping-inner">
+                <div class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="content">
+                    <p class="name">Secure Payments</p>
+                    <p class="order">AfterPay available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews-container details-limit-container">
+        <h1 class="heading">Real Reviews from Real Candy Lovers</h1>
+        <div class="reviews-container-inner">
+            <div class="write-rview">
+                <div class="dropdown">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <button class="dropbtn">14 Reviews</button>
+                </div>
+                <div class="buttons-container">
+                    <button class="write-review">Write a Review</button>
+                    <!-- <button class="filter-btn">
+                        <i class="fa-solid fa-sliders"></i>
+                    </button> -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="review-card">
+                    <div class="content">
+                        <div class="name-date">
+                            <p class="name">Barakat A.</p>
+                            <p class="date">11/16/2022</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review">
+                            My daughter really loves the costume, she calls herself “the real princess” <br> <br>
+                            Thank you so much, we hope to buy more from you again
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="../../assets/images/review1.png" alt="" />
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="content">
+                        <div class="name-date">
+                            <p class="name">Barakat A.</p>
+                            <p class="date">11/16/2022</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review">
+                            My daughter really loves the costume, she calls herself “the real princess” <br> <br>
+                            Thank you so much, we hope to buy more from you again
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="../../assets/images/review2.png" alt="" />
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="content">
+                        <div class="name-date">
+                            <p class="name">Saba S.</p>
+                            <p class="date">11/16/2022</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review">
+                            Thankyou Party corner for amazing Isabella and Mirabel costume ❤️ My girls enjoyed been this
+                            character . The quality of fabric and stitching was good quality.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="../../assets/images/review3.png" alt="" />
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="content">
+                        <div class="name-date">
+                            <p class="name">Saba S.</p>
+                            <p class="date">11/16/2022</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review">
+                            Thankyou Party corner for amazing Isabella and Mirabel costume ❤️ My girls enjoyed been this
+                            character . The quality of fabric and stitching was good quality.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="../../assets/images/review1.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="review_modal">
+        <div class="modal-content" id="review_modal_content">
+            <div class="logo">
+                <img src="../../assets/images/Goodiset-Swedish-logo.png" alt="" />
+            </div>
+            <div class="review-content">
+                <div class="hr-line"></div>
+                <div class="stars-rating">
+                    <div class="image">
+                        <img src="../../assets/images/product1.png" alt="" />
+                    </div>
+                    <div class="name-stars">
+                        <p class="name">Multicolored Sour Keys (Gluten-Free)</p>
+                        <div class="rating-container">
+                            <i class="fas fa-star star" data-value="1"></i>
+                            <i class="fas fa-star star" data-value="2"></i>
+                            <i class="fas fa-star star" data-value="3"></i>
+                            <i class="fas fa-star star" data-value="4"></i>
+                            <i class="fas fa-star star" data-value="5"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-line"></div>
+                <div class="input-fields">
+                    <div class="two-fields">
+                        <input type="text" placeholder="First Name*" />
+                        <input type="text" placeholder="Last Name*" />
+                    </div>
+                    <input type="email" placeholder="Email*" />
+                </div>
+                <div class="hr-line"></div>
+                <div class="input-fields">
+                    <p>* Required fields</p>
+                    <div class="upload-container">
+                        <div class="upload-box" id="upload-trigger">
+                            <i class="fa-solid fa-cloud-arrow-up 3x" id="upload-icon"></i>
+                            <input type="file" id="file-input" multiple hidden accept="image/*,video/*" />
+                            <div id="preview-container" class="preview-container"></div>
+                        </div>
+                        <div class="headings">
+                            <h3>Upload photo/video & get 10% off</h3>
+                            <p>Upload jpg, jpeg, png, or mp4 (5 files, max. 10MB)</p>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Review Title">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Write your review here"></textarea>
+                </div>
+
+                <div class="recommend">
+                    <h1>Would you recommend this?*</h1>
+
+                    <div class="radio-buttons">
+                        <input type="radio" id="yes" name="choice" value="yes" />
+                        <label for="yes" class="button-radio">Yes</label>
+
+                        <input type="radio" id="no" name="choice" value="no" />
+                        <label for="no" class="button-radio">No</label>
+                    </div>
+
+                </div>
+
+                <p class="terms">
+                    By continuing you agree to Quoli’s <a href="">Terms and Conditions</a> and <a>Privacy Policy</a> .
+                    Your email won’t be shown publicly and we never share emails with others.
+                </p>
+
+                <button class="agree_btn">Agree & Submit</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popular-paitings container-fluid">
+        <h1 class="heading">Popular Pairings</h1>
+
+            <div class="cards mb">
+                <div class="card-container">
+                    <div class="image">
+                        <button class="floating-btn">Sale</button>
+                        <img src="../../assets/images/product1.png" />
+                    </div>
+                    <div class="content">
+                        <p class="product-name">
+                            Multicolored Sour Keys <br />
+                            (Gluten-Free)
+                        </p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (3)
+                        </div>
+                        <p class="rats">
+                            95.00 AED <del class="ml">190.00 AED</del>
+                            <span class="red-text">(50% Off)</span>
+                        </p>
+                    </div>
+                    <div class="button">
+                        <button class="add-to-cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="image">
+                        <button class="floating-btn">Sale</button>
+                        <img src="../../assets/images/product2.png" />
+                    </div>
+                    <div class="content">
+                        <p class="product-name">
+                            Multicolored Sour Keys <br />
+                            (Gluten-Free)
+                        </p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (3)
+                        </div>
+                        <p class="rats">
+                            95.00 AED <del class="ml">190.00 AED</del>
+                            <span class="red-text">(50% Off)</span>
+                        </p>
+                    </div>
+                    <div class="button">
+                        <button class="add-to-cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="image">
+                        <button class="floating-btn">Sale</button>
+                        <img src="../../assets/images/product4.png" />
+                    </div>
+                    <div class="content">
+                        <p class="product-name">
+                            Multicolored Sour Keys <br />
+                            (Gluten-Free)
+                        </p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (3)
+                        </div>
+                        <p class="rats">
+                            95.00 AED <del class="ml">190.00 AED</del>
+                            <span class="red-text">(50% Off)</span>
+                        </p>
+                    </div>
+                    <div class="button">
+                        <button class="add-to-cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="image">
+                        <button class="floating-btn">Sale</button>
+                        <img src="../../assets/images/product3.png" />
+                    </div>
+                    <div class="content">
+                        <p class="product-name">
+                            Multicolored Sour Keys <br />
+                            (Gluten-Free)
+                        </p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (3)
+                        </div>
+                        <p class="rats">
+                            95.00 AED <del class="ml">190.00 AED</del>
+                            <span class="red-text">(50% Off)</span>
+                        </p>
+                    </div>
+                    <div class="button">
+                        <button class="add-to-cart">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+   
+    </div>
+
+    <footer>
+        <div class="getinfo">
+            <h2>Ready to Join the Sweet Side? Become a Franchise Partner! 🍭</h2>
+            <button class="info-btn">Get Info</button>
+        </div>
+        <div class="menus">
+            <div class="logo">
+                <img src="../../assets/images/footerlogo.png" alt="logo" />
+                <p>
+                    we bring joy, sweetness and candy into everyone's world. Goodiset is
+                    as Swedish as it gets and nothing beats Swedish goodies.
+                </p>
+            </div>
+            <ul class="footer-menu">
+                <li class="head"><a href=""> Company </a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Become a partner</a></li>
+                <li><a href="">Features</a></li>
+            </ul>
+            <ul class="footer-menu">
+                <li class="head"><a href=""> Distribution </a></li>
+                <li><a href="">Retailers</a></li>
+                <li><a href="">Franchise</a></li>
+                <li><a href="">Event organizer</a></li>
+            </ul>
+            <ul class="footer-menu">
+                <li class="head"><a href="">Help</a></li>
+                <li><a href="">Contact US</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+            <ul class="footer-menu">
+                <li class="head"><a href="">Newsletter</a></li>
+                <input type="text" placeholder="Email Address" />
+                <button class="subscribe">Subscribe Now</button>
+            </ul>
+        </div>
+        <div class="hr-line"></div>
+        <p class="footer-text">
+            © Copyright 2025, All Rights Reserved by Goodiset
+        </p>
+        <div class="whatsapp">
+            <img src="../../assets/icons/whatsapp.svg" />
+        </div>
+    </footer>
+
+    <script src="./product-details.js"></script>
+</body>
+
+</html>

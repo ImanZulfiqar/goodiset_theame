@@ -1,0 +1,285 @@
+.contactus-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+
+    .contactus-tabs {
+        padding: 80px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .tabs-container {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            max-width: 632px;
+
+            .tabs-heading {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                .heading1 {
+                    font: 400 40px/52px $secFont;
+                }
+                .tabs {
+                    display: flex;
+                    gap: 24px;
+
+                    .tab {
+                        padding: 32px 0;
+                        border: 1px solid $uiGray60;
+                        border-radius: 12px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 12px;
+                        width: 140px;
+                        font: 400 14px/16px $priFont;
+                        color: $uiBlack;
+                        cursor: pointer;
+                        background: $white;
+
+                        &.active {
+                            border-color: $priColor;
+                            background: $priColor50;
+                        }
+                    }
+                }
+            }
+
+            .form-containerr {
+                .checkboxs {
+                    display: flex;
+                    gap: 18px;
+                    font: 400 20px/24px $priFont;
+                    margin-bottom: 32px;
+
+                    .checkbox {
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+
+                        input {
+                            width: 20px;
+                            height: 20px;
+                            // appearance: none;
+                            border: 1px solid $uiGray60;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            background-color: $white;
+                            margin: 0px;
+                            accent-color: $priColor;
+                            &:checked {
+                                background-color: $priColor;
+                            }
+                        }
+
+                        label {
+                            color: $uiBlack;
+                        }
+                    }
+                }
+                .form {
+                    display: none;
+
+                    .fields {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+
+                        .field {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+
+                            label {
+                                font: 500 18px/24px $priFont;
+                                color: $uiBlack;
+                            }
+
+                            input,
+                            textarea,
+                            select,
+                            option,
+                            .dropdown-btn {
+                                padding: 12px;
+
+                                border: 1px solid #00000029;
+                                border-radius: 8px;
+                                font-size: 16px;
+                                line-height: 24px;
+                                justify-content: space-between;
+                            }
+                            select {
+                                padding: 15px;
+                            }
+                        }
+
+                        .two_fields {
+                            display: flex;
+                            gap: 24px;
+
+                            .field {
+                                width: 100%;
+                                input,
+                                textarea,
+                                select,
+                                option {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+
+                        .contactus-btn {
+                            width: 100%;
+                            padding: 12px;
+                            border: none;
+                            border-radius: 8px;
+                            background: $priColor;
+                            color: $white;
+                            font: 500 18px/24px $priFont;
+                            cursor: pointer;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .fields.event-organizers.active {
+                        display: flex;
+                    }
+                    .fields.event-organizers {
+                        display: none;
+                    }
+                }
+
+                .form.active {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .contactus-infos {
+        background-image: url("../../images/contactushero2.png");
+        background-size: cover;
+        background-position: center;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 48px;
+
+        .address-card {
+            padding: 22px;
+            border-radius: 22px;
+            background: rgba(70, 70, 70, 0.4);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .address {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .title {
+                    font: 700 22px/26px $priFont;
+                    color: $white;
+                    text-transform: uppercase;
+                }
+                .subtitle {
+                    font: 400 18px/24px $priFont;
+                    color: $white;
+                }
+            }
+            .blue-line {
+                width: 100%;
+                height: 1px;
+                background: rgba(55, 124, 253, 1);
+                max-width: 336px;
+            }
+        }
+    }
+}
+.social-icons {
+    display: flex;
+    gap: 16px;
+
+    .icon {
+        padding: 10px;
+        aspect-ratio: 1;
+        text-align: center;
+        border-radius: 100%;
+        border: 1px solid $white;
+        color: $white;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .contactus-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactus-container {
+        .contactus-tabs {
+            padding: 24px 0;
+            .tabs-container {
+                width: 90%;
+                gap: 24px;
+
+                .tabs-heading {
+                    .heading1 {
+                        font: 400 20px/22px $secFont;
+                    }
+                    .tabs {
+                        overflow-x: auto;
+                        scrollbar-width: none;
+                        margin-bottom: 0;
+                        .tab {
+                            padding: 12px;
+                            width: auto;
+                            flex-direction: row;
+                            font: 400 14px/16px $priFont;
+                            text-wrap: nowrap;
+                        }
+                    }
+                }
+                .form-container {
+                    .form {
+                        .checkboxs {
+                            flex-direction: column;
+                        }
+                        .fields {
+                            .two_fields {
+                                flex-direction: column;
+                                gap: 24px;
+                                .field {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contactus-infos {
+            width: 100%;
+            padding: 24px;
+            align-items: center;
+        }
+    }
+}
+.contect_us_form {
+    padding: 0 !important;
+    background-color: $white;
+}
+.contact_us_form_container {
+    background-color: $white !important;
+}

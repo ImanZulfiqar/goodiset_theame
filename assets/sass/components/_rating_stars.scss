@@ -1,0 +1,20 @@
+.rating_stars {
+    gap: 3px;
+    display: flex;
+    align-items: center;
+
+    .fa-star {
+        font-size: 14px; // Adjust the size as needed
+        color: transparent; // Transparent fill for all stars
+        stroke: $priColor; // Stroke color for the outline
+        stroke-width: 4px; // Define the stroke thickness
+        -webkit-text-stroke: 2px $priColor; // Stroke for webkit-based browsers
+        user-select: none; // Prevent text selection
+    }
+
+    .checked {
+        color: $priColor; // Fill color for checked stars
+        stroke: none; // Remove stroke for checked stars
+        -webkit-text-stroke: none;
+    }
+}

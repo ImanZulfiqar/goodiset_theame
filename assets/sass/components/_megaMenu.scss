@@ -1,0 +1,155 @@
+.mega-dropdown {
+    display: inline-block;
+
+    .mega-dropdown-toggle:hover .mega-dropdown-menu .menu-left ul li {
+    }
+
+    .mega-dropdown-toggle {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row !important;
+        gap: 10px;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        .mega_menu_arrow {
+            width: 10px;
+            height: 10px;
+            box-sizing: border-box;
+            border-left: 2px solid $uiBlack;
+            border-bottom: 2px solid $uiBlack;
+            transform: rotate(-45deg);
+        }
+    }
+
+    .mega-dropdown-menu {
+        display: none; /* Initially hidden */
+        position: absolute;
+        top: 100%;
+        box-sizing: border-box;
+        left: 0;
+        max-width: 1440px;
+        width: 100%;
+        border-top: 1px solid #00000029;
+        background-color: $white;
+        box-shadow: 0px 10px 22px 0px #0000000f;
+        z-index: 1000;
+        padding: 42px 105px;
+        // display: flex;
+        gap: 30px;
+        .menu-left {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            min-width: 180px;
+            align-items: flex-start;
+            h1 {
+                padding-left: 10px;
+                font-family: $secFont;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18.35px;
+                color: $uiBlack;
+                text-align: left;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                width: 100%;
+                li {
+                    font-family: $priFont;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18.23px;
+
+                    color: $uiBlack;
+                    cursor: pointer;
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    padding: 8px 10px;
+                    border-radius: 6px;
+                }
+            }
+        }
+        .menu-right {
+            display: flex;
+            gap: 30px;
+            justify-content: flex-start;
+            flex: 1 1 auto;
+            align-items: center;
+            color: $uiBlack;
+
+            .category-row img {
+                filter: unset;
+            }
+            .flavour_card {
+                height: 256px;
+                width: 100%;
+                max-width: 180px;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $secFont;
+                color: $white;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(../images/bgFlavour.jpeg);
+                background-blend-mode: soft-light;
+            }
+            .view_all {
+                width: 100%;
+                background-color: $priColor10;
+                height: 256px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                max-width: 180px;
+                font-family: $priFont;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                color: $priColor;
+            }
+        }
+        .cards {
+            display: flex;
+            width: 100%;
+            .card-container {
+                .image img {
+                    filter: none;
+                }
+            }
+        }
+
+        .first_category,
+        .flavour_category,
+        .flavour_category2 {
+            display: none;
+        }
+        .flavour_category{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+/* Show the menu on hover */
+.mega-dropdown:hover .mega-dropdown-menu {
+    display: flex;
+}

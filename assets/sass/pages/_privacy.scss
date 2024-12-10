@@ -1,0 +1,54 @@
+.privacy_policy_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-sizing: border-box;
+    max-width: 1016px;
+    padding: 100px 10px;
+    h1 {
+        font-family: $secFont;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 32.12px;
+        display: inline;
+
+        letter-spacing: 0.03em;
+    }
+    h4 {
+        font-family: $priFont;
+        font-size: 23px;
+        margin-top: 32px;
+        font-weight: 700;
+        line-height: 29.95px;
+    }
+    p {
+        font-family: $priFont;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        color: $uiBlack;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        list-style: inside;
+        list-style-type: decimal;
+        ::marker {
+            font-family: $secFont;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 32.12px;
+            display: inline;
+            letter-spacing: 0.03em;
+        }
+        li {
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    }
+}

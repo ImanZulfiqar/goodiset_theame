@@ -1,0 +1,99 @@
+.login_container {
+    width: 100%;
+    padding: 80px 16px;
+    background-color: $priColor10;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 840px;
+        width: 100%;
+        margin: auto;
+        .inputs {
+            display: flex;
+            gap: 30px;
+        }
+        .otp_input {
+            width: 72px;
+            height: 69px;
+
+            border-radius: 7px;
+            border: 1.24px solid #00000080;
+            font-family: $priFont;
+            font-size: 22.38px;
+            font-weight: 500;
+            line-height: 29.84px;
+            text-align: center;
+        }
+        .otp_input:focus {
+            outline: 1px solid $priColor;
+            border: none;
+        }
+        p {
+            font-family: $priFont;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 27.2px;
+            letter-spacing: -0.5px;
+            text-align: left;
+            color: #737373;
+
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            span {
+                font-weight: 700;
+                color: #1f2232;
+            }
+        }
+        .extra {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        h1 {
+            font-family: $priFont;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        button {
+            padding: 17px;
+            font-family: $priFont;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20.83px;
+            text-align: center;
+            border: none;
+            background-color: $priColor;
+            color: $white;
+            border-radius: 4px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .login_container form {
+        gap: 16px;
+        .inputs {
+            gap: 10px;
+            input {
+                width: 50px;
+                height: 52px;
+            }
+        }
+        h1 {
+            br {
+                display: none;
+            }
+            font-size: 24px;
+            line-height: 28px;
+        }
+        button {
+            padding: 12px;
+            font-size: 14px;
+        }
+    }
+}
